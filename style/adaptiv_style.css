@@ -1,0 +1,126 @@
+@media( max-width: 375px ) {
+    .menu a:before {
+        margin-right: 0;
+    }
+    .icon-block-blocked {
+        padding: 15px;
+    }
+    .icon-block__deckription {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+}
+
+@media  (min-width: 768px) {
+    .container {
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .promo {
+        background: #1f1703;
+        padding-top: 28px;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        width: 50%;
+        box-shadow: -3px -3px 0px 0px rgba(245, 197, 6, 0.27), -6px -6px 0px 0px rgba(245, 197, 6, 0.27);
+    }
+
+    .menu a {
+        font-size: 1.7vw;
+        padding: 7px;
+    }
+    .logo {
+        background: none;
+    }
+    .slider {
+        position: relative;
+        display: block;
+    }
+    .slide:first-child, .slide{
+        display: inline-flex;
+    }
+    .slides_controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        margin: 0 calc(-50vw + 50%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slider_control{
+        display: block;
+        width: 32px;
+        height: 57px;
+        background: rgba(245, 197, 6, 0.7);
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+    .slider_control:hover,
+    .slider_control:focus,
+    .slider_control:active{
+        opacity: 0.7;
+    }
+    .slides {
+        padding: 42px 0 72px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .slide {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .slide_media{
+        width: 50%;
+    }
+    .slide_text {
+        display: block;
+        margin-left: 64px;
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .slide_text h2 {
+        color: #f5c506;
+        font-weight: 200;
+        font-size: inherit;
+    }
+    .slide_text h3 {
+        color: #fff;
+        font-weight: 200;
+        font-size: inherit;
+    }
+    .icons {
+        background-color: white;
+        box-shadow: none;
+    }
+    .icon__item {
+        width: 100%;
+        border-left: solid 1px #d3d3d3;
+        border-right: solid 1px #d3d3d3;
+    }
+    .icon__deckription {
+        font-size: 27.05px;
+    }
+}
+@media (min-width: 1280px) {
+    .menu a{
+        font-size: 19px;
+    }
+    .slide_text {
+        font-size: 63px;
+    }
+}
