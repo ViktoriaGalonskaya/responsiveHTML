@@ -5,6 +5,7 @@
 }
 body {
     font-family: "Segoe UI";
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -95,7 +96,7 @@ header {
 .slide:first-child{
     display: block;
 }
-.icon-block {
+.icons {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -105,7 +106,7 @@ header {
     background-color: white;
     box-shadow: 0px -4px 0px 0px rgba(255, 255, 255, 0.40), 0px -9px 0px 0px rgba(255, 255, 255, 0.40);
 }
-.icon-block-blocked {
+.icon__item {
     width: calc(100% / 3);
     height: inherit;
     display: flex;
@@ -113,25 +114,25 @@ header {
     align-items: center;
     padding: 30px;
 }
-.icon-block__img {
+.icon__img {
     max-height: 100px;
     min-height: 50px;
     min-width: 110px;
     height: 10vw;
 }
-.icon-block__img_obloko {
+.icon__img--obloko {
     background: url("../img/obloko.png") no-repeat center;
     background-size: contain;
 }
-.icon-block__img_list {
+.icon__img--list {
     background: url("../img/list.png") no-repeat center;
     background-size: contain;
 }
-.icon-block__img_samolet {
+.icon__img--samolet {
     background: url("../img/samolet.png") no-repeat center;
     background-size: contain;
 }
-.icon-block__deckription {
+.icon__deckription {
     padding-top: 20px;
     font-size: 3.5vw;
     font-weight: 400;

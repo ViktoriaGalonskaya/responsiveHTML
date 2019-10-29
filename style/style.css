@@ -49,7 +49,7 @@ header {
     width: 30px;
     height: 24px;
     margin-right: 10px;
-    background: url("../img/icons.png") no-repeat;
+    background: url("../../img/icons.png") no-repeat;
 }
 .icon_people:before {
     background-position: 0 0;
@@ -116,15 +116,15 @@ header {
     height: 10vw;
 }
 .icon-block__img_obloko {
-    background: url("../img/obloko.png") no-repeat center;
+    background: url("../../img/obloko.png") no-repeat center;
     background-size: contain;
 }
 .icon-block__img_list {
-    background: url("../img/list.png") no-repeat center;
+    background: url("../../img/list.png") no-repeat center;
     background-size: contain;
 }
 .icon-block__img_samolet {
-    background: url("../img/samolet.png") no-repeat center;
+    background: url("../../img/samolet.png") no-repeat center;
     background-size: contain;
 }
 .icon-block__deckription {
