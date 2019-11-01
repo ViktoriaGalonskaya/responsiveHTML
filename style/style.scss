@@ -29,9 +29,8 @@ header {
     width: 25%;
     padding: 12px;
     background: linear-gradient(0deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%), #474747;
-
     img {
-        max-width: 100%;
+        width: 100%;
     }
 }
 .menu a{
@@ -141,23 +140,26 @@ header {
     height: 40%;
 }
 .twit-slide {
-    max-width: 767px;
+    max-width: 641px;
     margin: 0 auto;
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         max-width: 1024px;
     }
 }
 .twitter-slider {
     margin: 0;
     padding-bottom: 20px;
-    @media (min-width: 768px) {
+    @media (min-width: 10px) {
+        padding-bottom: 0px;
+    }
+    @media (min-width: 641px) {
         background: radial-gradient(circle, rgba(255,255,255,.23) 0%, rgba(255,255,255,0) 100%),  url("../img/bg.png") repeat;
 
     }
 }
 .twit-slide__title {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         display: block;
         color: #fff;
         font-size: 37px;
@@ -170,7 +172,7 @@ header {
 .twit-slide--flex {
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         flex-wrap: nowrap;
     }
 }
@@ -189,7 +191,7 @@ header {
         border: 2px solid #fff;
         font-size: 13px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         border: none;
         width: 32.3%;
         font-size: 23.8px;
@@ -225,7 +227,7 @@ header {
     @media (max-width:375px) {
         border: 2px solid #fff;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         border: 0;
         width: 32.3%;
     }
@@ -243,7 +245,7 @@ header {
         flex-direction: column;
         padding: 12px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         width: 32.3%;
         background: #ec9e03;
         display: flex;
@@ -254,7 +256,7 @@ header {
 }
 .twit-slide__icon--22 {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         display: block;
         font-size: 22px;
         color: #fff;
@@ -272,7 +274,7 @@ header {
     position: absolute;
     right: 12px;
     bottom: 18px;
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         display: block;
     }
 }
@@ -286,7 +288,7 @@ header {
     right: 12px;
     bottom: 18px;
     transform: rotate(90deg);
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         display: block;
     }
 }
@@ -312,7 +314,7 @@ header {
         width: 90%;
         padding-right: 0;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 641px) {
         display: none;
     }
 }
@@ -367,7 +369,7 @@ header {
 }
 .twit-slide__date {
     display: none;
-    @media (min-width: 768px){
+    @media (min-width: 641px){
         display: block;
         width: 113px;
         background: #ddb101;
@@ -393,6 +395,9 @@ header {
     border-radius: 8px;
     display: flex;
     margin: 40px auto 0;
+    @media (max-width: 641px) {
+        display: none;
+    }
 }
 .twitter-slider__button {
     width: 25%;
@@ -402,5 +407,89 @@ header {
 .twitter-slider__button:hover {
     background: #ec9e03;
 }
-/*   */
+.footer{
+    background-color: #474747;
+    padding-bottom: 50px;
+    @media (min-width: 641px) {
+        padding-bottom: 98px;
+    }
+}
+.footer__title{
+    max-width: 1300px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 39.05px;
+    color: #f5c506;
+    padding: 42px 0 83px;
+}
+.footer__description{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1025px;
+}
+.footer__technics{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    @media (min-width: 641px) {
+        width: 50%;
+    }
+}
+.footer__ellipse{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #f5c506;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 120px;
+    width: 120px;
+    p{
+        padding: 0 1px;
+    }
+}
+.footer__technics-photo{
+    width: 100%;
+}
+.footer__list{
+    display: none;
+    @media (min-width: 641px) {
+        display: block;
+        color: #a9a9a7;
+        width: 40%;
+    }
+}
+.copyright-bg{
+    background-color: #4c4c4c;
+    -webkit-box-shadow: 0px -3px 9px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px -3px 9px 4px rgba(0,0,0,0.75);
+}
+.copyright{
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright__link{
+    display: none;
+    @media (min-width: 641px) {
+        display: block;
+        a{
+            text-decoration: none;
+            text-transform: none;
+            color: white;
+        }
+    }
+}
 
